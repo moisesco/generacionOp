@@ -1,0 +1,9 @@
+<h3>user-edit component</h3>
+
+<form (submit)="update()" > <!--class="" action="index.html" method="post" -->
+  <input type="text" name="first_name" [(ngModel)]="editUser.first_name" value="" >
+  <input type="text" name="last_name" [(ngModel)]="editUser.last_name" value="" >
+  <input type="text" name="email" [(ngModel)]="editUser.email" value="" >
+
+ <button type="submit" name="button">Update</button>
+</form>

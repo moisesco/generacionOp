@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/user-new.component.css">
+  </head>
+<h3>user-new component</h3>
+<body>
+
+
+  <form (submit)="create()" class="form-registro">
+    <label class="form-label"> Codigo Estudiante: </label>
+    <input type="text" name="cod_estudiante" [(ngModel)]="newUser.cod_estudiante" value="" placeholder="" id="cod_estudiante">
+    <br><br/>
+
+    <label class="form-label"> Modalidad educativa que cursa: </label>
+    <input type="text" name="mod_edu" [(ngModel)]="newUser.mod_edu" value="" placeholder="" id="mod_edu">
+    <br><br/>
+
+    <label class="form-label"> Carrera: </label>
+    <input type="text" name="carrera" [(ngModel)]="newUser.carrera" value="" placeholder="" id="carrera">
+    <br><br/>
+
+    <label class="form-label"> ¿Que ciclo estas cursando?: </label>
+    <input type="text" name="ciclo_cursado" [(ngModel)]="newUser.ciclo_cursado" value="" placeholder="" id="ciclo_cursado">
+    <br><br/>
+
+    <label class="form-label"> ¿Que ciclo necesitas financiamiento? : </label>
+    <input type="text" name="ciclo_financiado" [(ngModel)]="newUser.ciclo_financiado" value="" placeholder="" id="ciclo_financiado">
+    <br><br/>
+
+   <button type="button" (click)="create()" name="button">Continuar</button>
+   <br/>
+  </form>
+</body>
+
+</html>

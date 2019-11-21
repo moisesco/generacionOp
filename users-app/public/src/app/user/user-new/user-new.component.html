@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/user-new.component.css">
+  </head>
+<h3>user-new component</h3>
+<body>
+
+
+  <form (submit)="create()" class="form-registro">
+    <label class="form-label"> Correo personal: </label>
+    <input type="text" name="email_personal" [(ngModel)]="newUser.email_personal" value="" placeholder="ejemplo123@generacioOP.com.pe" id="email_personal">
+    <br><br/>
+
+    <label class="form-label"> Correo universitario: </label>
+    <input type="text" name="email_univ" [(ngModel)]="newUser.email_univ" value="" placeholder="ejemplo123@unmsm.edu.pe" id="email_univ">
+    <br><br/>
+
+    <label class="form-label"> Nombres: </label>
+    <input type="text" name="nombres" [(ngModel)]="newUser.nombres" value="" placeholder="Ingrese sus nombres" id="nombres">
+    <br><br/>
+
+    <label class="form-label"> Apellido paterno: </label>
+    <input type="text" name="last_name" [(ngModel)]="newUser.apellido_p" value="" placeholder="Ingrese su apellido paterno" id="apellido_p">
+    <br><br/>
+
+    <label class="form-label"> Apellido materno: </label>
+    <input type="text" name="last_name" [(ngModel)]="newUser.apellido_m" value="" placeholder="Ingrese su apellido materno" id="apellido_m">
+    <br><br/>
+
+    <label class="form-label"> DNI: </label>
+    <input type="text" name="dni" [(ngModel)]="newUser.dni" value="" placeholder="Ingrese su DNI" id="dni">
+    <br><br/>
+
+    <label class="form-label"> Fecha de nacimiento: </label>
+    <input type="date" name="fec_nac" [(ngModel)]="newUser.fec_nac" value="" min="1950-01-01" max="2018-01-01" placeholder="Ingrese su fecha de nacimiento" id="fec_nac">
+    <br><br/>
+
+    <label class="form-label"> Celular: </label>
+    <input type="tel" name="celular" [(ngModel)]="newUser.celular" value="" pattern="[0-9]{9}" placeholder="Ingrese su celular" id="celular">
+    <br><br/>
+
+    <label class="form-label"> Calle / Av. / Jr. : </label>
+    <input type="text" name="calle" [(ngModel)]="newUser.calle" value="" placeholder="" id="calle">
+    <br><br/>
+
+    <label class="form-label"> N° : </label>
+    <input type="number" name="nro_casa" [(ngModel)]="newUser.nro_casa" value="" placeholder="" id="nro_casa">
+    <br><br/>
+
+    <label class="form-label"> Urbanización : </label>
+    <input type="text" name="urbanizacion" [(ngModel)]="newUser.urbanizacion" value="" placeholder="" id="urbanización">
+    <br><br/>
+
+    <label class="form-label"> Interior / Dpto. : </label>
+    <input type="text" name="interior" [(ngModel)]="newUser.interior" value="" placeholder="" id="interior">
+    <br><br/>
+
+    <label class="form-label"> Departamento: </label>
+    <input type="text" name="departamento" [(ngModel)]="newUser.departamento" value="" placeholder="" id="departamento">
+    &nbsp;
+
+    <label class="form-label"> Provincia: </label>
+    <input type="text" name="provincia" [(ngModel)]="newUser.provincia" value="" placeholder="" id="provincia">
+    &nbsp;
+
+    <label class="form-label"> Distrito: </label>
+    <input type="text" name="distrito" [(ngModel)]="newUser.distrito" value="" placeholder="" id="distrito">
+    <br><br/>
+
+    <label class="form-label"> Contraseña: </label>
+    <input type="password" name="contrasena" [(ngModel)]="newUser.contrasena" value="" placeholder="Ingrese su contraseña" id="contrasena">
+    <br><br/>
+
+<!--
+    <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+    <br/>
+-->
+
+   <button type="button" (click)="create()" name="button">Continuar</button>
+   <br/>
+   <p><a href="#">¿Ya tengo cuenta?</a></p>
+  </form>
+</body>
+
+</html>
